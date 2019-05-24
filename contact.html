@@ -18,6 +18,8 @@
       <script src="js/vendor/html5shiv.min.js"></script>
       <script src="js/vendor/respond.min.js"></script>
     <![endif]-->
+    <!-- REVIEW THIS PLEASE SEFU    -->
+    <!-- http://reusableforms.com/d/o5/html5-contact-form-send-email -->
 </head>
 
 <body>
@@ -28,7 +30,7 @@
 
     <header role="banner" class="probootstrap-header">
         <div class="container">
-            <a href="index.html" class="probootstrap-logo">Halcyon Photos<span>.</span></a>
+            <a href="index.html" class="probootstrap-logo">Let's Connect<span>.</span></a>
 
             <a href="#" class="probootstrap-burger-menu visible-xs"><i>Menu</i></a>
             <div class="mobile-menu-overlay"></div>
@@ -62,83 +64,81 @@
     </header>
     <!-- END: header -->
 
-    <div class="probootstrap-section">
-        <div class="container text-center">
+    <section class="probootstrap-section">
+        <div class="container">
             <div class="row">
-                <div class="col-md-6 col-md-offset-3 mb40">
-                    <h2>Buffalo Based Photographer</h2>
-                    <p>Welcome to my gallery! Here is a small collection of some of my work and travels. I hope you enjoy my photos. Please feel free to reach out for bookings, collaborations, or even non-profit projects for the community. Whatever it is,
-                        I am open to it all!</p>
+                <div class="col-md-6 col-md-offset-3 text-center probootstrap-animate">
+                    <h2>Contact Me</h2>
+                    <p>Feel free to find me at any of my social media links. If you would like a formal quote to your photography need, feel free to email me the details of what you are looking for and I will be happy to accomodate!</p>
                 </div>
+
+                <div class="col-md-6 col-md-offset-3 mb80 text-center probootstrap-animate">
+                    <ul class="probootstrap-social">
+                        <li>
+                            <a href="https://www.instagram.com/mastershefu/"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/callmesefath/"><i class="fab fa-linkedin-in"></i></a>
+                        </li>
+
+                        <li>
+                            <a href="https://github.com/shefuchow/"><i class="fab fa-github"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/716photographer/"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+
+                        <li>
+                            <a href="mailto:Halcyon.frames@gmail.com?subject=I%20would%20like%20to%20Schedule%20a%20Booking!&amp;body=Hi!%20My%20name%20is%20%3Cname%20here%3E%20and%20I%20would%20like%20to%20Schedule%20a%20booking%20for%20%3Cdate%2C%20time%2C%20location%2C%20hours%3E.%20%0A%0A*If%20you're%20just%20looking%20for%20consultation%0A%0AHi!%20My%20name%20is%20%3Cname%3E%20and%20I%20wanted%20to%20ask%20about%20%3Creplace%20here%3E!"><i class="fas fa-envelope"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
             </div>
 
-            <div class="row probootstrap-gutter16">
-                <div class="col-md-4 probootstrap-animate" data-animate-effect="fadeIn">
-                    <a href="events.html" class="img-bg" style="background-image: url(img/image_1.jpg);">
-                        <div class="probootstrap-photo-details">
-                            <h2>Feet first, fear second</h2>
-                            <p>Graduating to new levels</p>
+            <div class="row">
+                <div class="col-md-8 probootstrap-animate">
+                    <form class="probootstrap-form mb60" id="emailform">
+
+                        <div class="form-group">
+                            <label for="fname"><i class="fa fa-user" aria-hidden="true"></i> &NonBreakingSpace; Full Name</label>
+                            <input type="text" class="form-control" id="fname" name="full name" placeholder="Enter Name">
                         </div>
-                    </a>
+
+                        <div class="form-group">
+                            <label for="email"><i class="fa fa-envelope" aria-hidden="true"></i> &NonBreakingSpace; Email</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message"><i class="fa fa-comment" aria-hidden="true"></i> &NonBreakingSpace; Message</label>
+                            <textarea cols="30" rows="10" class="form-control" id="message" name="message" placeholder="Type Your Message"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-primary" id="submit">Send Message</button>
+                        </div>
+                    </form>
+                    <div id="error_message" style="width:100%; height:100%; display:none; ">
+                        <h4>
+                            Error
+                        </h4>
+                        Sorry there was an error sending your form.
+                    </div>
+                    <div id="success_message" style="width:100%; height:100%; display:none; ">
+                        <h2>Success! Your Message was Sent Successfully.</h2>
+                    </div>
                 </div>
-                <div class="col-md-8 probootstrap-animate" data-animate-effect="fadeIn">
-                    <a href="/travel.html" class="img-bg" style="background-image: url(img/image_2.jpg);">
-                        <div class="probootstrap-photo-details">
-                            <h2>More adventures, Captured</h2>
-                            <p>Cappadocia, Turkey</p>
-                        </div>
-                    </a>
+                <div class="col-md-3 col-md-push-1 probootstrap-animate">
+                    <h4>Helpful Details to Include</h4>
+                    <ul class="with-icon colored">
+                        <li><i class="icon-location2"></i> <span>What's the occasion</span></li>
+                        <li><i class="icon-mail"></i><span>How many people</span></li>
+                        <li><i class="icon-phone2"></i><span>How many hours</span></li>
+                        <li><i class="icon-phone2"></i><span>What locations</span></li>
+                    </ul>
                 </div>
             </div>
-
-            <div class="row probootstrap-gutter16">
-                <div class="col-md-5 probootstrap-animate" data-animate-effect="fadeIn">
-                    <a href="portraits.html" class="img-bg" style="background-image: url(img/image_3.jpg);">
-                        <div class="probootstrap-photo-details">
-                            <h2>Halcyon</h2>
-                            <p>[denoting a period of time idyllically happy and peaceful]</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-3 probootstrap-animate" data-animate-effect="fadeIn">
-                    <a href="nature.html" class="img-bg" style="background-image: url(img/image_4.jpg);">
-                        <div class="probootstrap-photo-details">
-                            <h2>Stay Keen</h2>
-                            <p>Stay Curious</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 probootstrap-animate" data-animate-effect="fadeIn">
-                    <a href="urbex.html" class="img-bg" style="background-image: url(img/image_5.jpg);">
-                        <div class="probootstrap-photo-details">
-                            <h2>Urbex</h2>
-                            <p>Explore the Concrete Jungle</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <div class="row probootstrap-gutter16">
-                <div class="col-md-8 probootstrap-animate" data-animate-effect="fadeIn">
-                    <a href="events.html" class="img-bg" style="background-image: url(img/image_6.jpg);">
-                        <div class="probootstrap-photo-details">
-                            <h2>Monumental Moments</h2>
-                            <p>Call for memorable shots</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 probootstrap-animate" data-animate-effect="fadeIn">
-                    <a href="food.html" class="img-bg" style="background-image: url(img/image_7.jpg);">
-                        <div class="probootstrap-photo-details">
-                            <h2>Delicious pastries</h2>
-                            <p>Needs photos in awesome color</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
         </div>
-    </div>
+    </section>
 
     <footer class="probootstrap-footer" role="contentinfo">
         <div class="container">
@@ -163,7 +163,6 @@
                         <li>
                             <a href="mailto:Halcyon.frames@gmail.com?subject=I%20would%20like%20to%20Schedule%20a%20Booking!&amp;body=Hi!%20My%20name%20is%20%3Cname%20here%3E%20and%20I%20would%20like%20to%20Schedule%20a%20booking%20for%20%3Cdate%2C%20time%2C%20location%2C%20hours%3E.%20%0A%0A*If%20you're%20just%20looking%20for%20consultation%0A%0AHi!%20My%20name%20is%20%3Cname%3E%20and%20I%20wanted%20to%20ask%20about%20%3Creplace%20here%3E!"><i class="fas fa-envelope"></i></a>
                         </li>
-
                     </ul>
                 </div>
             </div>
@@ -175,10 +174,11 @@
     </div>
 
 
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script src="js/scripts.min.js"></script>
     <script src="js/main.min.js"></script>
-    <script src="js/custom.js"></script>
 
+    <script src="js/custom.js"></script>
 </body>
 
 </html>
